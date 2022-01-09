@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>sign_status__c</fullName>
+    <externalId>false</externalId>
+    <label>sign status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Document sent</fullName>
+                <default>false</default>
+                <label>Document sent</label>
+            </value>
+            <value>
+                <fullName>Document viewed</fullName>
+                <default>false</default>
+                <label>Document viewed</label>
+            </value>
+            <value>
+                <fullName>Document signed</fullName>
+                <default>false</default>
+                <label>Document signed</label>
+            </value>
+            <value>
+                <fullName>Document generated</fullName>
+                <default>false</default>
+                <label>Document generated</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

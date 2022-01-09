@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Do_Not_Slydial__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Do_Not_Slydial__c</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Do_Not_Slydial__c</inlineHelpText>
+    <label>Do_Not_Slydial</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Checkbox</type>
+</CustomField>

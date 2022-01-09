@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Conga_Composer_Composer_SP_Proposal1</fullName>
+    <availability>online</availability>
+    <description>Created by Conga Solution Manager. Record link: https://sankaran-dev-ed--apxtconga4.eu35.visual.force.com/a1r5p00000K3kTgAAJ.</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>false</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <height>660</height>
+    <isResizable>false</isResizable>
+    <linkType>url</linkType>
+    <masterLabel>Composer SP Proposal</masterLabel>
+    <openType>newWindow</openType>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <url>/apex/APXTConga4__Conga_Composer?SolMgr=1
+&amp;serverUrl={!API.Partner_Server_URL_370}
+&amp;Id={!Opportunity.Id}
+
+&amp;QueryId=[MyNewQuery]0Q_000EAA931314
+
+&amp;TemplateId=0T_003EAA814546
+
+&amp;CongaEmailTemplateId=0E_001EAA949206
+
+&amp;TemplateGroup=Proposal
+&amp;DefaultPDF=1
+&amp;OFN=Company1 - {!Opportunity.Name} - {!Today}
+&amp;SC0=1
+&amp;SC1=Chatter
+&amp;DS7=3
+&amp;UF0=1
+&amp;MFTS0=sign_status__c&amp;MFTSValue0=Document generated</url>
+    <width>900</width>
+</WebLink>

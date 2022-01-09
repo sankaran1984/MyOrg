@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Menu</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>☰ My Menu</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>{!REQUIRESCRIPT(&quot;/soap/ajax/9.0/connection.js&quot;)}
+{!REQUIRESCRIPT(&quot;/soap/ajax/9.0/apex.js&quot;)}
+{!REQUIRESCRIPT(&quot;/apex/ButtonsMenu&quot;)}
+
+var m = ButtonsMenu(element,
+	[
+		{
+			Label : &apos;Button1&apos;,
+			onClick : onButton1Clicked
+		},
+		{
+			Label : &apos;Button2&apos;,
+			onClick : onButton2Clicked
+		},
+		{
+			Label : &apos;Button3&apos;,
+			onClick : onButton3Clicked
+		}		
+	]
+);
+
+function onButton1Clicked(){
+	/*Page redirection to page1*/
+	window.location.href = &apos;/apex/page1&apos;;
+}
+
+function onButton2Clicked(){
+	/*Onclick javascript execution*/
+	alert(&apos;Any custom logic in Javascript, goes here&apos;);
+	
+	//By default, once you click the button, label changes to &apos;Please Wait&apos; while the 
+	//webservice returns. So, in order to put back the original label, one need to call resetButtonBack()
+	m.resetButtonBack();
+}
+
+function onButton3Clicked(){
+	/*calling webservice called testservice*/
+	try{
+		var ret = sforce.apex.execute(&apos;WebServiceCls&apos;, &apos;testservice&apos;, 
+			{&apos;param1&apos; : &apos;test&apos;});
+	}catch(e){
+		alert(&apos;Error - &apos;+e);
+	}
+	
+	//By default, once you click the button, label changes to &apos;Please Wait&apos; while the 
+	//webservice returns. So, in order to put back the original label, one need to call resetButtonBack()
+	m.resetButtonBack();
+}</url>
+</WebLink>
