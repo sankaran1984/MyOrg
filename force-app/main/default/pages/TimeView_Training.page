@@ -1,0 +1,14 @@
+<apex:page controller="TimeView_Training_Ctrlr">
+    <apex:form >
+        <apex:commandButton value="Get Time" action="{!getCurrentTime}"/>
+        
+        <!-- Output Area -->
+        <apex:outputPanel id="OutputArea">
+            <apex:repeat value="{!values}" var="val">
+                <apex:outputPanel layout="block">
+                    Current time is {!val}
+                </apex:outputPanel>
+            </apex:repeat>
+        </apex:outputPanel>
+    </apex:form>
+</apex:page>

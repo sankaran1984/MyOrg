@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cloudbear__Record_Verified__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field shows whether some, all, or none of the record&apos;s phone numbers have been validated by RingsTrue</description>
+    <externalId>false</externalId>
+    <formula>CASE( cloudbear__NumberFix_Status__c, 
+&quot;All Numbers Verified&quot;, IMAGE(LEFT($Api.Partner_Server_URL_260, FIND( &apos;/services&apos;, $Api.Partner_Server_URL_260))+&quot;resource/cloudbear__All_Numbers_Verified&quot;,&quot;image1&quot;), 
+
+&quot;Partially Verified&quot;, IMAGE(LEFT($Api.Partner_Server_URL_260, FIND( &apos;/services&apos;, $Api.Partner_Server_URL_260))+&quot;/resource/cloudbear__Partially_Verified&quot;, &quot;image2&quot;), 
+
+&quot;No Verified Numbers&quot;, IMAGE(LEFT($Api.Partner_Server_URL_260, FIND( &apos;/services&apos;, $Api.Partner_Server_URL_260))+&quot;/resource/cloudbear__Number_not_Verified&quot;,&quot;image3&quot;),
+&quot;No Entered Numbers&quot;, IMAGE(LEFT($Api.Partner_Server_URL_260, FIND( &apos;/services&apos;, $Api.Partner_Server_URL_260))+&quot;/resource/cloudbear__Partially_Verified&quot;,&quot;image4&quot;),&quot;&quot;
+)</formula>
+    <inlineHelpText>This field shows whether some, all, or none of the record&apos;s phone numbers have been validated by RingsTrue</inlineHelpText>
+    <label>RingsTrue Verified</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

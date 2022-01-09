@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cloudbear__ValiddateButtonPage</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <height>0</height>
+    <linkType>page</linkType>
+    <masterLabel>ValiddateButtonPage</masterLabel>
+    <openType>sidebar</openType>
+    <page>cloudbear__ValidateButtonPage</page>
+    <protected>false</protected>
+</WebLink>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cloudbear__Validate</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Validate</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>{!REQUIRESCRIPT(&quot;/soap/ajax/35.0/connection.js&quot;)}
+{!REQUIRESCRIPT(&quot;/soap/ajax/35.0/apex.js&quot;)}
+try {
+
+var idd=&apos;{!JSENCODE(Account.Id)}&apos;;
+
+
+var results=sforce.apex.execute(&quot;cloudbear.ValidateButton1&quot;, &quot;Sobjectvalidate&quot;, {
+            idd : idd
+        });  
+
+    
+    if (results[0] === &quot;true&quot;) {
+      //  alert(&apos;in if&apos;);
+        location.reload();
+    }
+     else{
+      alert(results);
+        }
+
+
+} catch (e) {
+    alert(&quot;An Un-expected Error has Occurred. Error: &quot; + e);
+}</url>
+</WebLink>
