@@ -1,4 +1,0 @@
-<apex:page >
-    <apex:outputText >This is the template page</apex:outputText>
-    <apex:insert name="name"></apex:insert>
-</apex:page>

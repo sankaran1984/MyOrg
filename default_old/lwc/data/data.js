@@ -1,6 +1,0 @@
-export const bikes = [
-    {"id" : "1", "name" : "Yamaha", "category" : "economy", "imgURL" : "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.yamaha-motor.eu%2Fgb%2Fen%2Fproducts%2Fmotorcycles%2Furban-mobility%2Fys125%2F&psig=AOvVaw3muxWgbrbwImy2fXKdmvG2&ust=1610834959675000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCJDFzf_5nu4CFQAAAAAdAAAAABAD"},
-    {"id" : "2", "name" : "TVS", "category" : "luxury", "imgURL" : "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.carandbike.com%2Ftvs-bikes%2Fradeon&psig=AOvVaw1n6OuGiJbmLhi6qrewhpGn&ust=1610835018876000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNDBj5v6nu4CFQAAAAAdAAAAABAD"},
-    {"id" : "3", "name" : "Honda", "category" : "essentials", "imgURL" : "https://www.google.com/url?sa=i&url=https%3A%2F%2Fauto.economictimes.indiatimes.com%2Fnews%2Ftwo-wheelers%2Fmotorcycles%2Fhero-motocorp-launches-new-edition-of-splendor%2F78760339&psig=AOvVaw0P0S3DTG6ZTx-1vVHkf0gO&ust=1610835035614000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCKj786P6nu4CFQAAAAAdAAAAABAD"},
-    {"id" : "4", "name" : "Bajaj", "category" : "premium", "imgURL" : "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.livemint.com%2FAuto%2FXAzR0ZbXFxYIXUZkouz2SJ%2FBajaj-Auto-set-to-disrupt-Indias-motorcycle-market-in-peak.html&psig=AOvVaw1MqoGLAPOH3BMsR5CHVUzf&ust=1610835055906000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPiq9a36nu4CFQAAAAAdAAAAABAD"}
-]

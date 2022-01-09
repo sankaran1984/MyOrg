@@ -1,5 +1,0 @@
-<apex:page standardController="opportunity">
-    <apex:form >
-        <c:myTestComp2 opp="{!opportunity}"></c:myTestComp2>
-    </apex:form>
-</apex:page>
