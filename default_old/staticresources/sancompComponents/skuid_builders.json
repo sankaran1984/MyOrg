@@ -1,0 +1,26 @@
+{
+   "id": "sancomp",
+   "components": [
+      {
+         "id": "sayhello",
+         "folderId": "sancomp"
+      }
+   ],
+   "folders": [
+      {
+         "id": "sancomp",
+         "name": "San Comp",
+         "icon": "sk-icon-component-pack"
+      }
+   ],
+   "js": [
+      {
+         "path": "builders.js"
+      }
+   ],
+   "css": [
+      {
+         "path": "builders.css"
+      }
+   ]
+}

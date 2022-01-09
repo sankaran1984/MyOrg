@@ -1,0 +1,17 @@
+<!-- Test account number - 37050198 -->
+<apex:page controller="BankDetailViewerCtrlr">
+    <apex:form >
+        <apex:inputText value="{!inputText}"/>
+        <apex:commandButton value="Fetch Information" action="{!fetchBankDetail}" rerender="OutputArea"/>
+        
+    	<apex:outputPanel Id="OutputArea" layout="block" style="padding-top:20px;">
+            <apex:outputPanel rendered="{!output != null}">
+                bezeichnung - {!output['bezeichnung']} <br/>
+                bic - {!output['bic']} <br/>
+                ort - {!output['ort']} <br/>
+                plz - {!output['plz']} <br/>
+            </apex:outputPanel>    
+        </apex:outputPanel>
+        
+    </apex:form>
+</apex:page>

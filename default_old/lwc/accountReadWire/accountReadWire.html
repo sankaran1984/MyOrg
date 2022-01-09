@@ -1,0 +1,12 @@
+<template>
+    <lightning-input type="text" label="Enter the record Id" value={recordId}></lightning-input>
+    
+    <div if:true={data}>
+       Your account name is {data.Name}
+    </div>
+
+    <div if:false={data}>
+        Please enter a record id in the box
+    </div>
+
+</template>

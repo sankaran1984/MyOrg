@@ -1,0 +1,18 @@
+{
+   "id": "sancomp",
+   "components": [
+      {
+         "id": "sayhello"
+      }
+   ],
+   "js": [
+      {
+         "path": "runtime.js"
+      }
+   ],
+   "css": [
+      {
+         "path": "runtime.css"
+      }
+   ]
+}

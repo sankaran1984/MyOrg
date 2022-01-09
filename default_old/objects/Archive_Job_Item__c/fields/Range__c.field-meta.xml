@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Range__c</fullName>
+    <description>Archive Range. For example date range, ID range, String range, Number range used to archive the records</description>
+    <externalId>false</externalId>
+    <label>Range</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

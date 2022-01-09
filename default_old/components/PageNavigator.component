@@ -1,0 +1,13 @@
+<apex:component >
+    <apex:attribute name="previous" type="ApexPages.Action" description="previous button action"/>
+    <apex:attribute name="next" type="ApexPages.Action" description="next button action"/>
+
+    <apex:pageBlock >
+        <apex:pageBlockButtons location="top">
+            <apex:commandButton value="Previous" action="{!previous}"/>
+            <apex:commandButton value="Next" action="{!next}"/>
+        </apex:pageBlockButtons>
+
+        <apex:componentBody />
+    </apex:pageBlock>
+</apex:component>

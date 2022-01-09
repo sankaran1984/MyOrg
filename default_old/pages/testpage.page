@@ -1,0 +1,19 @@
+<apex:page id="thePage" controller="Testing">
+    
+    <apex:outputText value="{!oppValueExpr}">
+        <apex:param value="{!oppValue}"/>
+    </apex:outputText>
+
+    <!--
+   <apex:detail inlineedit="true"/>   
+   <c:TestComp /> -->
+
+<!--
+    <apex:repeat value="{!strings}" var="string" id="theRepeat">
+
+        <apex:outputText value="{!string}" id="theValue"/><br/>
+
+    </apex:repeat>
+-->
+
+</apex:page>

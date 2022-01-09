@@ -1,0 +1,3 @@
+<apex:component controller="TemplateController" access="global">
+{!currentUserImgURI}
+</apex:component>

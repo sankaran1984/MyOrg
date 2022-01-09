@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Price_upper_limit</fullName>
+    <active>true</active>
+    <description>price cant be more than 1000</description>
+    <errorConditionFormula>Price__c &gt; 1000</errorConditionFormula>
+    <errorMessage>price cant be more than 1000</errorMessage>
+</ValidationRule>

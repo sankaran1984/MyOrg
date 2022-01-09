@@ -1,0 +1,18 @@
+<template>
+
+    <div class="containerCls">
+        <div>Bike display page for {name}</div>
+
+        <lightning-layout>
+            <lightning-layout-item size="6">
+                <c-product-list onproductselected={handleProductSelected}></c-product-list>
+            </lightning-layout-item>
+
+            <lightning-layout-item size="6">
+                <c-product-detail product-id={bikeid}></c-product-detail>
+            </lightning-layout-item>
+        </lightning-layout>
+    </div>
+
+
+</template>
