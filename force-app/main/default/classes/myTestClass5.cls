@@ -11,6 +11,7 @@
     @isTest
     static void func1(){
         Test.startTest();
+        func();
         system.assertEquals([select id, name from merchandise__c where name='laptop_modified' limit 1].name, 'laptop_modified');
         Test.stopTest();
     }

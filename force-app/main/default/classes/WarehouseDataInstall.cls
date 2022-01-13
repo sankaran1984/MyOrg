@@ -9,12 +9,12 @@ public with sharing class WarehouseDataInstall {
     public PageReference createData() {
         List<Merchandise__c> m = new List<Merchandise__c>();
         m.add(new Merchandise__c(Name='Laptop',Price__c=500,Quantity__c=1000));
-        m.add(new Merchandise__c(Name='Desktop',Price__c=1000,Quantity__c=500));
+        m.add(new Merchandise__c(Name='Desktop',Price__c=100,Quantity__c=500));
         m.add(new Merchandise__c(Name='Tablet',Price__c=300,Quantity__c=5000));
-        m.add(new Merchandise__c(Name='Rack Server',Price__c=3245.99,Quantity__c=500));
+        m.add(new Merchandise__c(Name='Rack Server',Price__c=325.99,Quantity__c=500));
         m.add(new Merchandise__c(Name='Old Laptop',Price__c=345.99,Quantity__c=50));
-        m.add(new Merchandise__c(Name='Deluxe Desktop',Price__c=1399.99,Quantity__c=250));
-        m.add(new Merchandise__c(Name='Work Desktop',Price__c=1145.99,Quantity__c=750));        
+        m.add(new Merchandise__c(Name='Deluxe Desktop',Price__c=139.99,Quantity__c=250));
+        m.add(new Merchandise__c(Name='Work Desktop',Price__c=145.99,Quantity__c=750));        
         insert m;
         
         for (Integer i=0; i<=6; i++) {
