@@ -23,7 +23,7 @@
 private class EmailOnCompletionTestClass {
 
     static testMethod void isEmailSentSuccess() {
-        String toUserId = [select id from User where alias='sunder' limit 1].id;
+        String toUserId = UserInfo.getUserId();
         Task compTask = new Task(OwnerId=toUserId, Priority='Low', Status='Completed' );
         try{
         	insert compTask;

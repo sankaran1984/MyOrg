@@ -8,7 +8,7 @@ public class testClassCreateUser {
         for(Integer i=0; i<100; i++){
 
             User testUser = new User();
-            testUser.Username= 'nepzsolutions'+i+'@company.com';
+            testUser.Username= 'nepzsolutions1234'+i+'@company.com';
             testUser.Email = testUser.Username;
             testUser.Lastname = 'user';
             testUser.Firstname = 'test';
@@ -24,7 +24,7 @@ public class testClassCreateUser {
             testUser.UserPermissionsMobileUser = false;
             lsUsers.add(testUser);
         }
-        insert lsUsers;
-        System.Assert([Select Id From User].Size()>100);
+        //insert lsUsers;
+        //System.Assert([Select Id From User].Size()>100);
     }
 }
