@@ -16,7 +16,7 @@ jobs:
       - checkout
       - run:
           name: Run Apex Tests
-          command: 
+          command: |
             cd scripts/js
             node testscript.js
 
