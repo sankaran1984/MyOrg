@@ -13,10 +13,10 @@ jobs:
   test-apex:
     executor: my-sfdx-machine
     steps:
+      - checkout
       - run:
           name: Run Apex Tests
-          command: |
-            node testscript.js
+          command: node testscript.js
 
 workflows:
   main:
