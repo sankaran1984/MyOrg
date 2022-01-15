@@ -14,7 +14,13 @@ jobs:
     executor: my-sfdx-machine
     steps:
       - run:
-          name: Validate
+          name: Run Apex Tests
           command: |
-            cd sfdx
-            yarn sfdx force:source:deploy
+            node testscript.js
+
+workflows:
+  main:
+    jobs:
+      - test-apex
+
+
