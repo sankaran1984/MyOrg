@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="LdsCreateRecord" icon-name="custom:custom14">
+        <div class="slds-var-m-around_small">
+        
+            <lightning-input label="Id" type="text" value={accId} disabled="true"></lightning-input>
+            <lightning-input label="Name" type="text" onchange={nameChangeHandler}></lightning-input>
+
+            <lightning-button label="Create" onclick={createRecord}></lightning-button>
+
+        </div>
+        <div slot="footer">
+            <a href="javascript:void(0);">view source</a>
+        </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,21 @@
+<template>
+    <lightning-card title="Apex Imperative Method">
+        <div class="slds-var-m-around_small">
+            <lightning-button label="Load Contacts" onclick={handleLoad}></lightning-button>
+            <div class="slds-var-m-around_small">
+                <template if:true={contacts}>
+                    <template for:each={contacts} for:item="contact">
+                        <div key={contact.Id}>{contact.Name}</div>
+                    </template>
+                </template>
+                <template if:true={err}>
+                    <c-error-panel error={err}></c-error-panel>
+                </template>
+            </div>
+        </div>
+
+        <div slot="footer">
+            <a href="javascript:void(0);">click here</a>
+        </div>
+    </lightning-card>
+</template>

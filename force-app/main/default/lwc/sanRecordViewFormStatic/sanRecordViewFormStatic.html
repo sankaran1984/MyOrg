@@ -1,0 +1,29 @@
+<template>
+    <lightning-card title="Record Form View Dynamic">
+        <div class="slds-var-m-around_small">
+
+            <lightning-record-view-form
+                object-api-name={objectApiName}
+                record-id={recordId}>
+
+                <lightning-messages></lightning-messages>
+
+                <lightning-output-field field-name={fields.accountId}></lightning-output-field>
+            
+                <lightning-output-field field-name={fields.name}></lightning-output-field>
+
+                <lightning-output-field field-name={fields.title}></lightning-output-field>
+
+                <lightning-output-field field-name={fields.phone}></lightning-output-field>
+
+                <lightning-output-field field-name={fields.email}></lightning-output-field>
+            
+            </lightning-record-view-form>
+
+
+        </div>
+        <div slot="footer">
+            <a href="javascript:void(0);">click here</a>
+        </div>
+    </lightning-card>
+</template>

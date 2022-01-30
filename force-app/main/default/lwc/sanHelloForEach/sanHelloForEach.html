@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="HelloForEach" icon-name="custom:custom14">
+        <div class="slds-var-m-around_small">
+            <template for:each={items} for:item="item">
+                <div key={id}>{item}</div>
+            </template>
+        </div>
+
+        <div slot="footer">
+            <a href="javascript:void(0);">view source</a>
+        </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="HelloExpressions" icon-name="custom:custom14">
+        <div class="slds-var-m-around_small">
+            <lightning-input type="text" name="firstName" label="First Name" onchange={hanleChange}></lightning-input>
+            <lightning-input type="text" name="lastName" label="Last Name" onchange={hanleChange}></lightning-input>
+            <div class="slds-var-m-top_small">
+                Upper cased full name : {upperCaseText}
+            </div>
+        </div>
+        <div slot="footer">
+            <a href="javascript:void(0);">view source</a>
+        </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,20 @@
+<template>
+    <lightning-card title="Apex Imperative Complex Types">
+        <div class="slds-var-m-around_small">
+            <lightning-input type="text" label="Enter some text" onchange={handleTextChange}></lightning-input>
+            <lightning-input type="number" max="100" min="0" label="Enter some number" onchange={handleNumChange}></lightning-input>
+            <lightning-input type="number" max="10" min="1" label="Enter list size" onchange={handleListSizeChange}></lightning-input>
+            <lightning-button label="Call Apex" onclick={handleButtonClick}></lightning-button>
+        
+            <template if:true={apexResponse}>
+                <p>{apexResponse}</p>
+            </template>
+            <template if:true={error}>
+                <c-error-panel errors={error}></c-error-panel>
+            </template>
+        </div>
+        <div slot="footer">
+            <a href="javascript:void(0);">click here</a>
+        </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="HelloBinding" icon-name="custom:custom14">
+        <div class="slds-p-horizontal_small">
+            Hello, {inputVal}!
+            <lightning-input type="text" label="Name" value={inputVal} onchange={inputValChanged}>
+            </lightning-input>
+        </div>
+        <div slot="footer">
+            <a href="javascript:void(0);">view source</a>
+        </div>
+    </lightning-card>
+</template>

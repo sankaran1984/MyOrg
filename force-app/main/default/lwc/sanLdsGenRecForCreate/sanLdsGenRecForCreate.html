@@ -1,0 +1,20 @@
+<template>
+    <lightning-card title="LDS Generate Record Create">
+
+    <div class="slds-var-m-around_small">
+        <template if:true={recInp}>
+            <lightning-input type="text" label="Name" data-name={accFieldApiName} onchange={handleChange}></lightning-input>
+            <lightning-input type="number" label="Area Number" data-name={accAreaNumApiName} value={areaNumber} onchange={handleChange}></lightning-input>
+
+            <lightning-button label="Create" onclick={createRecord}></lightning-button>
+        </template>
+        
+        <c-error-panel friendly-message="Test friendly message" errors="[A, B, C]"></c-error-panel>
+    </div>
+
+    <div slot="footer">
+        <a href="javascript:void(0);">click here</a>
+    </div>
+
+    </lightning-card>
+</template>

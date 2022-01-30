@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title="Apex Method With Params">
+        <div class="slds-var-m-around_small">
+            <lightning-input type="search" label="Enter Contact Name" onchange={handleSearch}></lightning-input>
+            <template if:true={contacts.data}>
+                <template for:each={contacts.data} for:item="contact">
+                    <div key={contact.Id} class="slds-var-m-vertical_small">{contact.Name}</div>
+                </template>
+            </template>
+            <template if:true={contacts.error}>
+                <c-error-panel error={contact.error}></c-error-panel>
+            </template>
+        </div>
+        <div slot="footer">
+            <a href="javascript:void(0);"> click here </a>
+        </div>
+    </lightning-card>
+</template>
