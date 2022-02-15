@@ -1,4 +1,4 @@
-const sfdx = require('sfdx-node');
+/*const sfdx = require('sfdx-node');
 const fs = require('fs');
 
 const SF_CERT = process.env.SF_CERT;
@@ -13,5 +13,5 @@ sfdx.auth.jwt.grant({
     jwtkeyfile : 'cert.key',
     clientid : SF_CLIENT_ID,
     setdefaultdevhubusername : true
-});
+});*/
 
