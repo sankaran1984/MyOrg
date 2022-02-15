@@ -1,0 +1,127 @@
+<template>
+    <lightning-layout class="slds-box" style="background-color: white;" multiple-rows>
+        <lightning-layout-item padding="around-small" size="4">
+            <lightning-combobox  required
+                options={options}
+                label="Select Option"
+                value={selectedValue}
+                onchange={handleChange}>
+            </lightning-combobox>
+        </lightning-layout-item>
+        <template if:true={showConCode}>
+            <lightning-layout-item padding="around-small" size="4">
+                <lightning-input required
+                    type="text"
+                    label="Confirmation Code"
+                    value={confirmationCode}
+                    onchange={handleConfirmationCodeChange}
+                    >
+                </lightning-input>
+            </lightning-layout-item>
+        </template>
+        <template if:true={showName}>
+            <lightning-layout-item padding="around-small" size="4">
+                <lightning-input required
+                    type="text"
+                    label=Name
+                    onchange={handleSearchStringChange}
+                    value={searchString}>
+                </lightning-input>
+            </lightning-layout-item>
+        </template>
+        <template if:true={showEmail}>
+        <lightning-layout-item padding="around-small" size="4">
+            <lightning-input required
+                type="email"
+                label="Email"
+                onchange={handleSearchStringChange}
+                value={searchString}>
+            </lightning-input>
+        </lightning-layout-item>
+       </template>
+       <template if:true={showPhone}>
+        <lightning-layout-item padding="around-small" size="4">
+            <lightning-input required
+                type="phone"
+                label="Phone"
+                onchange={handleSearchStringChange}
+                value={searchString}>
+            </lightning-input>
+        </lightning-layout-item>
+        </template>
+        <lightning-layout-item class="slds-align_absolute-center" padding="around-small"  size="4">
+            <lightning-button
+                    variant="brand"    
+                    onclick={handleSearch}
+                    label="Search">
+            </lightning-button>
+        </lightning-layout-item>
+    </lightning-layout>
+
+    <template if:true={recordFound}>
+        <br/>
+        <lightning-layout class="slds-box" style="background-color: white;" multiple-rows>
+             <lightning-formatted-text class="slds-align_absolute-center slds-text-heading_small" padding="around-small" value="Patient Details"></lightning-formatted-text> <br/>
+            <lightning-layout-item padding="around-small" size="12">
+        
+                    <lightning-record-form
+                    record-id={recordId}
+                    onsuccess={handleSuccess}
+                    object-api-name="Account"
+                    density="compact"
+                    fields={fields}
+                    mode="readonly">
+                    </lightning-record-form>
+                  
+            </lightning-layout-item>
+        <template if:true={job1Found}>
+            <lightning-formatted-text class="slds-align_absolute-center slds-text-heading_small" padding="around-small" value="Dose 1 Details"></lightning-formatted-text> <br/>
+            <lightning-layout-item padding="around-small" size="12">
+        
+              <!--  <lightning-record-edit-form object-api-name="sked__Job__c" id="job1Form">
+                    <lightning-messages></lightning-messages>
+                    <lightning-input-field field-name="Name" required>
+                    </lightning-input-field>
+                    <lightning-input-field field-name="Phone" required>
+                    </lightning-input-field>
+                    <lightning-button type="submit" name="submit" label="Create Account">
+                    </lightning-button>
+                    <lightning-button onclick={validateFields} name="submit" label="Validate">
+                    </lightning-button>
+                </lightning-record-edit-form>  -->
+                
+                 <lightning-record-form
+                    record-id={job1recordId}
+                    object-api-name="sked__Job__c"
+                    onsubmit={handleSubmit}
+                    data-fieldname="jobForm1"
+                    onsuccess={handleSuccess}
+                    density="compact"
+                    fields={jobfields}
+                    mode={job1Mode}>
+                    </lightning-record-form>  
+                  
+            </lightning-layout-item>
+        
+        </template>
+
+        <template if:true={job2Found}>
+            <lightning-formatted-text class="slds-align_absolute-center slds-text-heading_small" padding="around-small" value="Dose 2 Details"></lightning-formatted-text> <br/>
+            <lightning-layout-item padding="around-small" size="12">
+        
+                    <lightning-record-form
+                    record-id={job2recordId}
+                    object-api-name="sked__Job__c"
+                    onsubmit={handleSubmit}
+                    onsuccess={handleSuccess}
+                    density="compact"
+                    fields={jobfields}
+                    mode="edit">
+                    </lightning-record-form>
+                  
+            </lightning-layout-item>
+        
+    </template>
+  </lightning-layout>
+    </template>
+</template>

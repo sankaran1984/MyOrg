@@ -1,0 +1,25 @@
+<template>
+    <lightning-card title="Apex Imperative Call with Params">
+        <div class="slds-var-m-around_small">
+            <lightning-layout vertical-align="end">
+                <lightning-layout-item flexibility="grow">
+                    <lightning-input type="search" label="Search Contact" value={searchKey} onchange={handleSearchkeyChange}></lightning-input>
+                </lightning-layout-item>
+                <lightning-layout-item>
+                    <lightning-button label="Search"  onclick={handleSearchButton}></lightning-button>
+                </lightning-layout-item>
+            </lightning-layout>
+            <template if:true={contacts}>
+                <template for:each={contacts} for:item="contact">
+                    <div key={contact.Id}>{contact.Name}</div>
+                </template>
+            </template>
+            <template if:true={error}>
+                <c-error-panel error={error}></c-error-panel>
+            </template>
+        </div>
+        <div slot="footer">
+            <a href="javascript:void(0);">click here</a>
+        </div>
+    </lightning-card>
+</template>

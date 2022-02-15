@@ -1,0 +1,20 @@
+<template>
+    
+    <lightning-card title="Apex Wire To Property">
+
+        <div class="slds-var-m-around_small">
+            <template if:true={contacts.data}>
+                <template for:each={contacts.data} for:item="contact">
+                    <div key={contact.Id}>{contact.Name}</div>
+                </template>
+            </template>
+            <template if:true={contacts.error}>
+                <c-error-panel error={contacts.error}></c-error-panel>
+            </template>
+        </div>
+
+        <div slot="footer">
+            <a href="javascript:void(0);"> click here</a>
+        </div>
+    </lightning-card>
+</template>

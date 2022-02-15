@@ -1,0 +1,20 @@
+<template>
+    <lightning-card title="Apex Static Schema">
+        <div class="slds-var-m-around_small">
+            <template if:true={contact.data}>
+                <p>{name}</p>
+                <p>{title}</p>
+                <p>
+                    <lightning-formatted-email value={email}></lightning-formatted-email>
+                </p>
+            </template>
+            <template if:true={contact.error}>
+                <c-error-panel error={contact.error}></c-error-panel>
+            </template>
+        </div>
+
+        <div slot="footer">
+            <a href="javascript:void(0);">click here</a>
+        </div>
+    </lightning-card>
+</template>

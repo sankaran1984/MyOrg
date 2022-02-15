@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title="HelloIterator" icon-name="custom:custom14">
+
+        <ul class="slds-var-p-around_small">
+            <template iterator:myit={contacts}>
+                <li key={myit.value.Id}>
+                    <div if:true={myit.first} class="lineCls"></div>
+                    {myit.value.Name}
+                    <div if:true={myit.last} class="lineCls"></div>
+                </li> 
+            </template>
+        </ul>
+
+        <div slot="footer">
+            <a href="javascript:void(0);">view source</a>
+        </div>
+    </lightning-card>
+</template>

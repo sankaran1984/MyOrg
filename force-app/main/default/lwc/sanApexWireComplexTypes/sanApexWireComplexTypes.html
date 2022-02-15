@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="Apex Call with Complex Types">
+        <div class="slds-var-m-around_small">
+            <lightning-input type="text" label="Input string" onchange={handleTextChange}></lightning-input>
+            <lightning-input type="number" max="100" min="0" label="Input number" onchange={handleNumChange}></lightning-input>
+            <lightning-input type="number" max="10" min="1" label="Input size of list" onchange={handleListChange}></lightning-input>
+        
+            <template if:true={apexResponse.data}>
+                <p>{apexResponse.data}</p>
+            </template>
+            <template if:true={apexResponse.error}>
+                <c-error-panel errors={apexResponse.error}></c-error-panel>
+            </template>
+        </div>
+        <div slot="footer">
+            <a href="javascript:void(0);">click here</a>
+        </div>
+    </lightning-card>
+</template>

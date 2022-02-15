@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="HelloConditionalRendering" icon-name="custom:custom14">
+        <div class="slds-var-m-around_small">
+            <lightning-input type="checkbox" label="Show details" onchange={handleToggle}></lightning-input>
+            
+            <div class="slds-var-m-top_small">
+                <div if:true={showDetails}>
+                    These are the details !
+                </div>
+                <div if:false={showDetails}>
+                    Not Showing Details
+                </div> 
+            </div>           
+        </div>
+        <div slot="footer">
+            <a href="javascript:void(0);">view source</a>
+        </div>
+    </lightning-card>
+</template>

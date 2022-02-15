@@ -1,0 +1,21 @@
+<template>
+    <lightning-card title="Get Record Wire">
+        <div class="slds-var-m-around_small">
+
+            <template if:true={contact}>
+                <p>{name}</p>
+                <p>{title}</p>
+                <p>{phone}</p>
+                <lightning-formatted-email value={email}></lightning-formatted-email>
+            </template>
+            
+            <template if:true={error}>
+                <c-error-panel errors={error}></c-error-panel>
+            </template>
+
+        </div>
+        <div slot="footer">
+            <a href="javascript:void(0);">click here</a>
+        </div>
+    </lightning-card>
+</template>

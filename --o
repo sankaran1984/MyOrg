@@ -1,0 +1,12 @@
+HTTP/1.1 302 Found
+Date: Tue, 18 Jan 2022 07:17:39 GMT
+Set-Cookie: CookieConsentPolicy=0:1; domain=sankaran-dev-ed.my.salesforce.com; path=/; expires=Wed, 18-Jan-2023 07:17:39 GMT; Max-Age=31536000
+Set-Cookie: LSKey-c$CookieConsentPolicy=0:1; domain=sankaran-dev-ed.my.salesforce.com; path=/; expires=Wed, 18-Jan-2023 07:17:39 GMT; Max-Age=31536000
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Robots-Tag: none
+Cache-Control: no-cache,must-revalidate,max-age=0,no-store,private
+Set-Cookie: BrowserId=t-wtmXguEeysFBn4J7ycfg; domain=.salesforce.com; path=/; expires=Wed, 18-Jan-2023 07:17:39 GMT; Max-Age=31536000
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Location: https://sankaran-dev-ed.my.salesforce.com/setup/secur/RemoteAccessAuthorizationPage.apexp?source=CAAAAX5sekOxMDAwMDAwMDAwMDAwMDAwAAAA6qlgrguk_Svb5-8-00ptR8hvHld5ecerIeaNSsnL2JRrTmzExFjcHdspLjWDMMKvGYui2Sy4PMADicM1WkKV2ev-BXn1qJxqkJmVw82nVE1kzfxGNklkUpMU2GfuDOGvfEYUim_SRNrWyIRLZKp2hG72P98qPlofA8OuTeqR5YfoqWwI2PofyxcGL-0DOSkKuAac5-3baeY8mS7o-eRHz1wg3BpvHN0ARPZh-m-HSTrJQoMFUaCfJAYu6qFa3UC7CKy6zY-yfEbc0YRmFQOUxkAdGrd-QIn1MVtylMvBbKWirVEeTfBksSfpfkSI9DUg6qchk4QzOUwRRYNfvMsHkPrbGnMViTpB9gcw2cVIpezli2X5ZfSJ8YZm27iw01h8GE2IssYyd7Yj_Lf1kUTS8_gmNQsXTZjpWm28V-NihGg7hJh9s0VgeGBj0UoiOSOBUpk_cNNAod3JZHAIqS7k0VJA0ZiAZujvsm44nWgQoMnbRHrdMYBOkkPFL8NRkX0eN27ZDRdMEkue0UelTJruFuQ0ueCeKPwA_jGxlFfnp51YrknttkEoJZBR5EMnf4ryAEMJ9xdMf-m0zB8vCLHkwXFE5tTjopI3jWcI7MZmLU5Fr2EPsoWvPJYIdlv3uzE9B223UxUvqH-NG8uv8Z1eu-iPtfQTe3iTx6dU3-oM7g7I
+Content-Length: 0
+

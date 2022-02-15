@@ -1,0 +1,23 @@
+<template>
+    <lightning-card title="LDS Delete Record">
+
+        <div  class="slds-var-m-around_small">
+            <template if:true={accounts}>
+                <template for:each={accounts} for:item="account">
+                    <lightning-layout key={account.Id} class="slds-var-m-vertical_x-small">
+                        <lightning-layout-item flexibility="grow">{account.Name}</lightning-layout-item>
+                        <lightning-button-icon icon-name="utility:delete" data-record-id={account.Id} onclick={handleDelete}></lightning-button-icon>
+                    </lightning-layout>
+                </template>
+            </template>
+
+            <template if:true={err}>
+                <c-error-panel friendly-message="Error received on fetching account"></c-error-panel>
+            </template>
+        </div>
+
+        <div slot="footer">
+            <a href="javascript:void(0);">click here</a>
+        </div>
+    </lightning-card>
+</template>
