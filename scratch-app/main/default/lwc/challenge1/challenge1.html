@@ -1,0 +1,7 @@
+<!-- Challenge1.html -->
+<template>
+    <lightning-input type="search" value={searchStr} onchange={searchChangeHandler}> </lightning-input>
+
+    <lightning-datatable columns={columns} data={data} key-field="Id" onrowaction={handleRowAction}>
+    </lightning-datatable>
+</template>

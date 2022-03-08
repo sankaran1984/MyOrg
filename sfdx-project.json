@@ -1,19 +1,23 @@
 {
-  "packageDirectories": [
-    {
-      "path": "force-app",
-      "default": true
-    },
-    {
-      "path" : "sodexo-app",
-      "default" : false
-    },
-    {
-      "path" : "scratch-app",
-      "default" : false
-    }
-  ],
-  "namespace": "",
-  "sfdcLoginUrl": "https://login.salesforce.com",
-  "sourceApiVersion": "53.0"
+    "packageDirectories": [
+        {
+            "path": "force-app",
+            "default": true
+        },
+        {
+            "path": "sodexo-app",
+            "default": false
+        },
+        {
+            "path": "scratch-app",
+            "default": false
+        },
+        {
+            "path": "force-di",
+            "default": true
+        }
+    ],
+    "namespace": "",
+    "sfdcLoginUrl": "https://login.salesforce.com",
+    "sourceApiVersion": "53.0"
 }
